@@ -1,36 +1,76 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-	<title>Who Said It?</title>
-	<link rel="stylesheet" type="text/css" href="whosaidit.css">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
-	<script src="whosaidit.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="whosaidit.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+
+  <script src="whosaidit.js"></script>
+
+  <title>Who Said It?</title>
 </head>
 <body>
-	<div id="container">
-		<div id="title">
-			<h1>Who Said It?</h1>
-		</div>
-		<div id="quote_container">
-			<p id="paragraph"><i>&quot;<span id="quote">I kinda just wanted to be a songwriter, you know.
-			I think that's the hardest thing: to write a song.</span>&quot;<i>
-			</p>
-		</div>
-		<div id="photo_container">
-			
-			<div class="image_and_button_box" id="image_1">
-				<button class="button" id="button_1">Bob Dylan &#187;</button>
-			</div>
-			<div class="image_and_button_box" id="image_2">
-				<button class="button" id="button_2">Leonard Cohen &#187;</button>
-			</div>
-			<div class="image_and_button_box" id="image_3">
-				<button class="button" id="button_3">Adam Sandler &#187;</button>
-			</div>
-		</div>
-		<div id="footer">
-			<button id="next_button">Next &#187;</button>
-		</div>
-	</div>
+  <div class="row">
+    <div class="col-xs-12 menu-col">
+      <button class="btn back-button">&#171; portfolio</button>
+    </div>
+  </div>
+
+  <!-- HEADIN -->
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 title">
+        Who Said It?
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-12 subtitle">
+        a sardonic quiz
+      </div>
+    </div>
+
+    <!-- QUOTE -->
+    <div class="row">
+      <div class="col-md-12 quote-col">
+        <div class="quote-box">
+          <p id="quote-number">
+            1/6
+          </p>
+          <p id="quote">
+            &quot;I kinda just wanted to be a songwriter, you know. I think that's the hardest thing: to write a song.&quot;
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- IMAGES + BUTTONS -->
+    <div class="row button-row">
+      <div class="col-xs-4 img-col">
+        <img src="imgs/sandler-300.jpg" id="img-0" alt="">
+        <button class="btn btn-primary name-button" id="btn-0">Adam Sandler</button>
+      </div>
+      <div class="col-xs-4 img-col">
+        <img src="imgs/dylan-300.jpg"  id="img-1" alt="">
+        <button class="btn btn-primary name-button" id="btn-1">Bob Dylan</button>
+      </div>
+      <div class="col-xs-4 img-col">
+        <img src="imgs/cohen-300.jpg" id="img-2" alt="">
+        <button class="btn btn-primary name-button" id="btn-2">Leonard Cohen</button>
+      </div>
+    </div>
+
+    <!-- NEXT BUTTON -->
+    <div class="row">
+      <div class="col-md-12 button-col">
+        <button class="btn next-button">next &#187;</button>
+      </div>
+    </div>
+  </div>
 </body>
 </html>
